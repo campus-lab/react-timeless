@@ -23,6 +23,26 @@ $timeline_cursor_font_color: #fff !default;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+    .time-cursor--min:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 97%;
+      width: 0;
+      height: 0;
+      border: 25px solid transparent;
+      border-left: 12px solid $timeline_cursor_bg_color;
+    }
+    .time-cursor--max:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 97%;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-right: 12px solid $timeline_cursor_bg_color;
+    }
 }
 
 .timeline-available {
